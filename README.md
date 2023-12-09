@@ -1,11 +1,7 @@
-# Next.js Enterprise Boilerplate
+# Merchants of Tomorrow
 
 ![Project intro image](./project-logo.png)
 
-<br />
-<a href="https://discord.gg/fyWtyNKmfX" style="width: 100%; display: flex; justify-content: center;">
-  <img src="https://discordapp.com/api/guilds/1111676875782234175/widget.png?style=banner2" alt="MOT Discord Banner"/>
-</a>
 <br />
 
 ## 📚 Features
