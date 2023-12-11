@@ -31,8 +31,13 @@ module.exports = {
         },
       },
       fontFamily: {
+        heading: [
+          "Telegraf",
+          "ui-sans-serif",
+          "system-ui",
+        ],
         body: [
-          "Inter",
+          "Telegraf",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
@@ -83,7 +88,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
   future: {
     hoverOnlyWhenSupported: true,
   },
