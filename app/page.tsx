@@ -1,6 +1,6 @@
 import { Metadata } from "next"
-import Navigation from "components/Navigation/Navigation"
 import { Hero } from "components/Hero/Hero"
+import Navigation from "components/Navigation/Navigation"
 
 export const metadata: Metadata = {
   title: "Merchants of Tomorrow",
