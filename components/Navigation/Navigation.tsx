@@ -1,8 +1,8 @@
 "use client";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Fragment, useState } from 'react'
 
 const navigation = {
   categories: [
@@ -94,7 +94,7 @@ const navigation = {
   ],
 }
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -185,7 +185,6 @@ export default function Navigation() {
                               {section.name}
                             </p>
                             <ul
-                              role="list"
                               aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
                               className="mt-6 flex flex-col space-y-6"
                             >
@@ -333,7 +332,6 @@ export default function Navigation() {
                                             {section.name}
                                           </p>
                                           <ul
-                                            role="list"
                                             aria-labelledby={`${section.name}-heading`}
                                             className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                           >
@@ -384,7 +382,7 @@ export default function Navigation() {
                   <div className="flow-root">
                     <a href="#" className="group mr-2 flex items-center p-2">
                       <ShoppingBagIcon
-                        className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                        className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-gray-500"
                         aria-hidden="true"
                       />
                       <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
